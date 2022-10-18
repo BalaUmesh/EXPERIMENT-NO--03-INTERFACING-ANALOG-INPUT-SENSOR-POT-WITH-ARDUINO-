@@ -49,8 +49,7 @@ CIRCUIT DIAGRAM
 
 ![image](https://user-images.githubusercontent.com/36288975/163530788-eec3cdc3-95e8-4d2d-8349-6d0ea4c9439c.png)
 
-**FIGURE -01
-**
+**FIGURE -01**
 
 **PROCEDURE:**
 
@@ -67,7 +66,36 @@ CIRCUIT DIAGRAM
 
 
 **PROGRAM** 
+
+ NAME : BALAUMESH S
+
+REG.NO: 212221040024
+
+
+```
+
+int sensorvalue = A0;
+int LED=7;
+void setup()
+{
+  sensorvalue=0;
+  Serial.begin(9600);
+  //pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(7,OUTPUT);
+}
+void loop()
+{
+  sensorvalue = analogRead(A0);
+  //Serial.print("POT = ");
  
+  Serial.println(sensorvalue);
+  delay(5);
+  digitalWrite(LED,sensorvalue);
+  delay(5);
+ 
+}
+
+```
 
 
 
@@ -76,18 +104,19 @@ CIRCUIT DIAGRAM
 
 
 
-
-**
 **Simulation output:** 
-**
 
 
-[My image](username.github.com/repository/img/image.jpg)
-
-
+![Screenshot e2 1](https://user-images.githubusercontent.com/113031742/196408445-5385cd79-0719-4e44-b509-7ed479bde227.png)
 
 
 
 
 
-**RESULT: ** Arduino uno analog input functioning is learned and interfaced with digital input switch .
+
+
+
+
+**RESULT:** 
+
+Arduino uno analog input functioning is learned and interfaced with digital input switch .
